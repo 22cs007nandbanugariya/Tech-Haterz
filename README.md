@@ -1,1 +1,1 @@
-# Tech-Haters
+# Tech-Haterz
