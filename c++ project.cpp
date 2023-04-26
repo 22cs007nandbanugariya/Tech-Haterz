@@ -3,6 +3,7 @@
 using namespace std;
 int main()
 {
+    //variables 
     int choise;
     float PI =3.14159265358979323846;
     float x,y;
@@ -50,7 +51,7 @@ int main()
         cout<<"Enter a second number :";
         cin>>y;
         result= x+y;
-        cout<<"Addition of two number is :"<<result;
+        cout<<"Addition of two number = "<<result;
         break;
 
     case 2: //Substraction
@@ -60,7 +61,7 @@ int main()
         cout<<"Enter a second number :";
         cin>>y;
         result = x-y;
-        cout<<"Subtraction of two number is :"<< result;
+        cout<<"Subtraction of two number = "<< result;
         break;
 
     case 3: //Multiplication
@@ -70,7 +71,7 @@ int main()
         cout<<"Enter a second number :";
         cin>>y;
         result = x*y;
-        cout<<"multiplication of two number is :"<<result;
+        cout<<"multiplication of two number = "<<result;
         break;
 
     case 4: //Division
@@ -80,7 +81,7 @@ int main()
         cout<<"Enter a second number :";
         cin>>y;
         result = x/y;
-        cout<<"Division of two number is :"<<result;
+        cout<<"Division of two number = "<<result;
         break;
 
     case 5: //Square
@@ -88,7 +89,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = x*x;
-        cout<<"Square of a number is :"<<result;
+        cout<<"Square of a number = "<<result;
         break;
 
     case 6: //Square root
@@ -96,7 +97,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = sqrt(x);
-        cout<<"Square root of this number is:"<<result;
+        cout<<"Square root of this number = "<<result;
         break;
 
     case 7: //Cube
@@ -104,7 +105,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = x*x*x;
-        cout<<"Cube of this number is = "<<result;
+        cout<<"Cube of this number = "<<result;
         break;
 
    case 8: //Cube root 
@@ -112,7 +113,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = cbrt(x);
-        cout<<"Cube root is:"<<result;
+        cout<<"Cube root = "<<result;
         break;
 
    case 9: //Power
@@ -146,7 +147,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = exp(x);
-        cout<<"Exponential of "<<x<<"is : "<<result;
+        cout<<"Exponential of "<<x<<"= "<<result;
         break;
 
    case 13: //Sine function
@@ -178,7 +179,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = asin(x)*180.0/PI;
-        cout<<"Inverse sine of "<<x<<"is(in degree):"<<result;
+        cout<<"Inverse sine of "<<x<<"(in degree) = "<<result;
         break;
 
    case 17: //Inverse of cosine
@@ -186,7 +187,7 @@ int main()
         cout<<"Enter a number :";    
         cin>>x;
         result = acos(x)*180.0/PI;
-        cout<<"Inverse cosine of "<<x<<"is(in degree):"<<result;
+        cout<<"Inverse cosine of "<<x<<"(in degree) = "<<result;
         break;
 
    case 18: //Inverse of tan
@@ -194,7 +195,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = atan(x)*180.0/PI;
-        cout<<"Inverse tangent of "<<x<<"is(in degree):"<<result;
+        cout<<"Inverse tangent of "<<x<<"(in degree) = "<<result;
         break;
 
    case 19: //Hyperbolic sine
