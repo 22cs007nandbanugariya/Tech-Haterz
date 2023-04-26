@@ -6,13 +6,12 @@ int main()
     //variables 
     int choise;
     float PI =3.14159265358979323846;
-    float x,y;
+    float x,y,result;
     long factorial = 1;
-    float result;
     
-    cout<<"------------------------------------------------------------------"<<endl;
-    cout<<"                   SCIENTIFIC CALCULATOR"<<endl;
-    cout<<"------------------------------------------------------------------"<<endl;
+    cout<<"--------------------------------------------------------------------"<<endl;
+    cout<<"\t\t\tSCIENTIFIC CALCULATOR"<<endl;
+    cout<<"--------------------------------------------------------------------"<<endl;
     
     //List Of function
     cout<<"1.Addition";
@@ -35,11 +34,11 @@ int main()
     cout<<"\t\t 18.Inverse of Tan"<<endl;
     cout<<"19.Hyperbolic sine";
     cout<<"\t\t 20.Hyperbolic cosine"<<endl;
-    cout<<"21.Hyperbolic tangent"<<endl;
-    cout<<"22.Degree to Radians"<<endl;
-    cout<<"23.Radians to Degree"<<endl;
-    cout<<"24.Factorial"<<endl;
-    cout<<"-------------------------------------------------------------------"<<endl;
+    cout<<"21.Hyperbolic tangent";
+    cout<<"\t\t 22.Degree to Radians"<<endl;
+    cout<<"23.Radians to Degree";
+    cout<<"\t\t 24.Factorial"<<endl;
+    cout<<"---------------------------------------------------------------------"<<endl;
     cout<<"Enter the function that you want to perform :";
     cin>>choise;
     switch(choise)
@@ -253,8 +252,7 @@ int main()
               }
             cout << "Factorial of " << x << " = " << factorial;    
          }
-            
-     cout<<endl<<"------------------------------THANK YOU------------------------------";
 
      }
+     cout<<endl<<"-------------------------------THANK YOU-------------------------------";
 }
