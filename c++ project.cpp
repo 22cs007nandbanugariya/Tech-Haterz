@@ -1,10 +1,10 @@
 #include<iostream>
-#include<cmath>
+#include<cmath> //for mathmatics function 
 using namespace std;
 int main()
 {
     //variables 
-    int choise;
+    int choice;
     float PI =3.14159265358979323846;
     float x,y,result;
     long factorial = 1;
@@ -21,7 +21,7 @@ int main()
     cout<<"5.Square";
     cout<<"\t \t \t 6.Square root"<<endl;
     cout<<"7.cube";
-    cout<<"\t\t\t\t 8.cube root"<<endl;
+    cout<<"\t\t\t\t 8.Cube root"<<endl;
     cout<<"9.Power ";
     cout<<"\t\t\t 10.Natural Logarithm"<<endl;
     cout<<"11.Logarithm(base 10)";
@@ -39,9 +39,19 @@ int main()
     cout<<"23.Radians to Degree";
     cout<<"\t\t 24.Factorial"<<endl;
     cout<<"---------------------------------------------------------------------"<<endl;
-    cout<<"Enter the function that you want to perform :";
-    cin>>choise;
-    switch(choise)
+
+lable: //for invalid input execution starts from this
+    cout<<"Enter the function number that you want to perform : ";
+    cin>>choice;  //input from user
+    if(choice>=1 && choice<=24)
+    cout<<endl;
+
+    else{
+    cout<<"invalid input : ";
+    goto lable;
+    }
+
+    switch(choice)//switch case for user input
     {
     case 1: //Addition
         
