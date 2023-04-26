@@ -47,7 +47,7 @@ lable: //for invalid input execution starts from this
     cout<<endl;
 
     else{
-    cout<<"invalid input : ";
+    cout<<"invalid input!!! "<<endl;
     goto lable;
     }
 
