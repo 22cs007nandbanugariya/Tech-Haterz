@@ -63,7 +63,7 @@ int main()
         cout<<"Subtraction of two number is :"<< result;
         break;
 
-    case 3: //Multiplicatiopn
+    case 3: //Multiplication
             
         cout<<"Enter a first number :";
         cin>>x;
@@ -117,12 +117,12 @@ int main()
 
    case 9: //Power
             
-        cout<<"Enter a number :";
+        cout<<"Enter base number :";
         cin>>x;
         cout<<"Enter the power:";
         cin>>y;
         result = pow(x,y);
-        cout<<x<<" "<<"power of"<<" "<< y <<" is :"<<result;
+        cout<<"Result = "<<result;
         break;
 
    case 10: //Natural Logarithm
@@ -130,7 +130,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = log(x);
-        cout<<"log"<<" "<<x<<"is :"<<result;
+        cout<<"log("<<x<<") = "<<result;
         break;
 
    case 11: // Logarithm(base 10)
@@ -138,7 +138,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = log10(x);
-        cout<<"log10"<<" "<<x<<"is :"<<result;
+        cout<<"log10("<<x<<") = "<<result;
         break;
 
    case 12: //Exponential
@@ -146,7 +146,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = exp(x);
-        cout<<"Exponential of a "<<x<<"is : "<<result;
+        cout<<"Exponential of "<<x<<"is : "<<result;
         break;
 
    case 13: //Sine function
@@ -154,7 +154,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = sin(x);
-        cout<<"sin function of "<<x<<"is :"<<result;
+        cout<<"sin("<<x<<") = "<<result;
         break;
 
    case 14: //Cosine function
@@ -162,7 +162,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = cos(x);
-        cout<<"cos function of "<<x<<"is :"<<result;
+        cout<<"cos("<<x<<") = "<<result;
         break;
 
    case 15: //Tan function
@@ -170,31 +170,31 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = tan(x);
-        cout<<"tan function of "<<x<<"is :"<<result;
+        cout<<"tan("<<x<<") = "<<result;
         break;
 
    case 16: //Inverse of sine
             
         cout<<"Enter a number :";
         cin>>x;
-        result = sin(x)*180.0/PI;
-        cout<<"Inverse sine of  "<<x<<"is :"<<result;
+        result = asin(x)*180.0/PI;
+        cout<<"Inverse sine of "<<x<<"is(in degree):"<<result;
         break;
 
    case 17: //Inverse of cosine
             
         cout<<"Enter a number :";    
         cin>>x;
-        result = cos(x)*180.0/PI;
-        cout<<"Inverse cosine of "<<x<<"is :"<<result;
+        result = acos(x)*180.0/PI;
+        cout<<"Inverse cosine of "<<x<<"is(in degree):"<<result;
         break;
 
    case 18: //Inverse of tan
             
         cout<<"Enter a number :";
         cin>>x;
-        result = tan(x)*180.0/PI;
-        cout<<"Inverse tangent of "<<x<<"is :"<<result;
+        result = atan(x)*180.0/PI;
+        cout<<"Inverse tangent of "<<x<<"is(in degree):"<<result;
         break;
 
    case 19: //Hyperbolic sine
@@ -202,7 +202,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = sinh(x);
-        cout<<"Hyperbolic sin of"<<x<<"is :"<<result;
+        cout<<"sinh("<<x<<") = "<<result;
         break;
 
    case 20: //Hyperbolic cosine
@@ -210,7 +210,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = cosh(x);
-        cout<<"Hyperbolic cos of"<<x<<"is :"<<result;
+        cout<<"cosh("<<x<<") = "<<result;
         break;
 
    case 21: //Hyperbolic tan
@@ -218,7 +218,7 @@ int main()
         cout<<"Enter a number :";
         cin>>x;
         result = tanh(x);
-        cout<<"Hyperbolic tan of"<<x<<"is :"<<result;
+        cout<<"tanh("<<x<<") = "<<result;
         break;
 
    case 22: //Degree to radians
@@ -226,7 +226,7 @@ int main()
         cout<<"Enter the angle in Degrees :";    
         cin>>x;
         result = x*PI/180;
-        cout<<"The angel in Radians"<<x<<"is :"<<result;
+        cout<<"The angle in Radian = "<<result;
         break;
 
    case 23: //radians to degree
@@ -234,7 +234,7 @@ int main()
         cout<<"Enter the angle in Radians :";    
         cin>>x;
         result = x*180/PI;
-        cout<<"The angel in Degrees"<<x<<"is :"<<result;
+        cout<<"The angel in Degree = "<<result;
         break;
 
    case 24: //Factorial
