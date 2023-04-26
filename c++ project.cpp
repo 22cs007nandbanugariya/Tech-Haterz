@@ -7,9 +7,13 @@ int main()
     float PI =3.14159265358979323846;
     float x,y;
     long factorial = 1;
+    float result;
+    
     cout<<"------------------------------------------------------------------"<<endl;
     cout<<"                   SCIENTIFIC CALCULATOR"<<endl;
     cout<<"------------------------------------------------------------------"<<endl;
+    
+    //List Of function
     cout<<"1.Addition";
     cout<<"\t\t\t 2.Subtraction"<<endl;
     cout<<"3.Multiplication";
@@ -39,8 +43,8 @@ int main()
     cin>>choise;
     switch(choise)
     {
-    case 1:
-        float result;
+    case 1: //Addition
+        
         cout<<"Enter a first number  :";
         cin>>x;
         cout<<"Enter a second number :";
@@ -49,7 +53,8 @@ int main()
         cout<<"Addition of two number is :"<<result;
         break;
 
-    case 2:
+    case 2: //Substraction
+            
         cout<<"Enter a first number :";
         cin>>x;
         cout<<"Enter a second number :";
@@ -58,7 +63,8 @@ int main()
         cout<<"Subtraction of two number is :"<< result;
         break;
 
-    case 3:
+    case 3: //Multiplicatiopn
+            
         cout<<"Enter a first number :";
         cin>>x;
         cout<<"Enter a second number :";
@@ -67,7 +73,8 @@ int main()
         cout<<"multiplication of two number is :"<<result;
         break;
 
-    case 4:
+    case 4: //Division
+            
         cout<<"Enter a first number :";
         cin>>x;
         cout<<"Enter a second number :";
@@ -76,35 +83,40 @@ int main()
         cout<<"Division of two number is :"<<result;
         break;
 
-    case 5:
+    case 5: //Square
+            
         cout<<"Enter a number :";
         cin>>x;
         result = x*x;
         cout<<"Square of a number is :"<<result;
         break;
 
-    case 6:
+    case 6: //Square root
+            
         cout<<"Enter a number :";
         cin>>x;
         result = sqrt(x);
         cout<<"Square root of this number is:"<<result;
         break;
 
-    case 7:
+    case 7: //Cube
+            
         cout<<"Enter a number :";
         cin>>x;
         result = x*x*x;
-        cout<<"Result = "<<result;
+        cout<<"Cube of this number is = "<<result;
         break;
 
-   case 8:
+   case 8: //Cube root 
+            
         cout<<"Enter a number :";
         cin>>x;
         result = cbrt(x);
         cout<<"Cube root is:"<<result;
         break;
 
-   case 9:
+   case 9: //Power
+            
         cout<<"Enter a number :";
         cin>>x;
         cout<<"Enter the power:";
@@ -113,118 +125,134 @@ int main()
         cout<<x<<" "<<"power of"<<" "<< y <<" is :"<<result;
         break;
 
-   case 10:
+   case 10: //Natural Logarithm
+            
         cout<<"Enter a number :";
         cin>>x;
         result = log(x);
         cout<<"log"<<" "<<x<<"is :"<<result;
         break;
 
-   case 11:
+   case 11: // Logarithm(base 10)
+            
         cout<<"Enter a number :";
         cin>>x;
         result = log10(x);
         cout<<"log10"<<" "<<x<<"is :"<<result;
         break;
 
-   case 12:
+   case 12: //Exponential
+            
         cout<<"Enter a number :";
         cin>>x;
         result = exp(x);
         cout<<"Exponential of a "<<x<<"is : "<<result;
         break;
 
-   case 13:
+   case 13: //Sine function
+            
         cout<<"Enter a number :";
         cin>>x;
         result = sin(x);
         cout<<"sin function of "<<x<<"is :"<<result;
         break;
 
-   case 14:
+   case 14: //Cosine function
+            
         cout<<"Enter a number :";
         cin>>x;
         result = cos(x);
         cout<<"cos function of "<<x<<"is :"<<result;
         break;
 
-   case 15:
+   case 15: //Tan function
+            
         cout<<"Enter a number :";
         cin>>x;
         result = tan(x);
         cout<<"tan function of "<<x<<"is :"<<result;
         break;
 
-   case 16:
+   case 16: //Inverse of sine
+            
         cout<<"Enter a number :";
         cin>>x;
         result = sin(x)*180.0/PI;
         cout<<"Inverse sine of  "<<x<<"is :"<<result;
         break;
 
-   case 17:
-        cout<<"Enter a number :";    //implicit jovanu che
+   case 17: //Inverse of cosine
+            
+        cout<<"Enter a number :";    
         cin>>x;
         result = cos(x)*180.0/PI;
         cout<<"Inverse cosine of "<<x<<"is :"<<result;
         break;
 
-   case 18:
+   case 18: //Inverse of tan
+            
         cout<<"Enter a number :";
         cin>>x;
         result = tan(x)*180.0/PI;
         cout<<"Inverse tangent of "<<x<<"is :"<<result;
         break;
 
-   case 19:
+   case 19: //Hyperbolic sine
+            
         cout<<"Enter a number :";
         cin>>x;
         result = sinh(x);
-        cout<<"Hyperbolic "<<x<<"is :"<<result;
+        cout<<"Hyperbolic sin of"<<x<<"is :"<<result;
         break;
 
-   case 20:
+   case 20: //Hyperbolic cosine
+            
         cout<<"Enter a number :";
         cin>>x;
         result = cosh(x);
-        cout<<"Hyperbolic "<<x<<"is :"<<result;
+        cout<<"Hyperbolic cos of"<<x<<"is :"<<result;
         break;
 
-   case 21:
+   case 21: //Hyperbolic tan
+            
         cout<<"Enter a number :";
         cin>>x;
         result = tanh(x);
-        cout<<"Hyperbolic "<<x<<"is :"<<result;
+        cout<<"Hyperbolic tan of"<<x<<"is :"<<result;
         break;
 
-   case 22:
+   case 22: //Degree to radians
+            
         cout<<"Enter the angle in Degrees :";    
         cin>>x;
         result = x*PI/180;
         cout<<"The angel in Radians"<<x<<"is :"<<result;
         break;
 
-   case 23:
+   case 23: //radians to degree
+            
         cout<<"Enter the angle in Radians :";    
         cin>>x;
         result = x*180/PI;
         cout<<"The angel in Degrees"<<x<<"is :"<<result;
         break;
 
-   case 24:
-    cout << "Enter a positive integer: ";
-    cin >> x;
+   case 24: //Factorial
+            
+        cout << "Enter a positive integer: ";
+        cin >> x;
 
-    if (x < 0)
-        cout << "Error! Factorial of a negative number doesn't exist.";
-    else 
-     {
-        for(int i = 1; i <= x; ++i)
-          {
-            factorial *= i;
-          }
-        cout << "Factorial of " << x << " = " << factorial;    
-     }
+        if (x < 0)
+            cout << "Error! Factorial of a negative number doesn't exist.";
+        else 
+         {
+            for(int i = 1; i <= x; ++i)
+              {
+                factorial *= i;
+              }
+            cout << "Factorial of " << x << " = " << factorial;    
+         }
+            
      cout<<endl<<"------------------------------THANK YOU------------------------------";
 
      }
