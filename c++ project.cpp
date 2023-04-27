@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath> //for mathmatics function
 using namespace std;
+
 int main()
 {
     // variables
@@ -67,19 +68,19 @@ lable_: // for again asking for perform any function
             switch (i)
             {
             case 1:
-                cout << "Enter " << i << "st number : ";
+                cout << "Enter the " << i << "st number : ";
                 break;
 
             case 2:
-                cout << "Enter " << i << "nd number : ";
+                cout << "Enter the " << i << "nd number : ";
                 break;
 
             case 3:
-                cout << "Enter " << i << "rd number : ";
+                cout << "Enter the " << i << "rd number : ";
                 break;
 
             default:
-                cout << "Enter " << i << "th number : ";
+                cout << "Enter the " << i << "th number : ";
                 break;
             }
             cin >> y;
@@ -99,15 +100,15 @@ lable_: // for again asking for perform any function
             switch (i)
             {
             case 2:
-                cout << "Enter " << i << "nd number : ";
+                cout << "Enter the " << i << "nd number : ";
                 break;
 
             case 3:
-                cout << "Enter " << i << "rd number : ";
+                cout << "Enter the " << i << "rd number : ";
                 break;
 
             default:
-                cout << "Enter " << i << "th number : ";
+                cout << "Enter the " << i << "th number : ";
             }
             cin >> y;
             result -= y;
@@ -126,15 +127,15 @@ lable_: // for again asking for perform any function
             switch (i)
             {
             case 2:
-                cout << "Enter " << i << "nd number : ";
+                cout << "Enter the " << i << "nd number : ";
                 break;
 
             case 3:
-                cout << "Enter " << i << "rd number : ";
+                cout << "Enter the " << i << "rd number : ";
                 break;
 
             default:
-                cout << "Enter " << i << "th number : ";
+                cout << "Enter the " << i << "th number : ";
             }
             cin >> y;
             result *= y;
