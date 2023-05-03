@@ -44,6 +44,7 @@ int main()
 
 lable:  // for invalid input execution starts from this
 lable_: // for again asking for perform any function
+    cout<<endl;
     cout << "Enter the function number that you want to perform : ";
     cin >> choice; // input from user
 
@@ -61,8 +62,9 @@ lable_: // for again asking for perform any function
     case 1: // Addition
 
         result = 0;
-        cout << "Enter the number to be added : ";
+        cout << "Enter the number of terms to be added : ";
         cin >> x; // input for howmany number that you want to add
+        cout<<endl;
         for (int i = 1; i <= x; i++)
         {
             switch (i)
@@ -86,13 +88,15 @@ lable_: // for again asking for perform any function
             cin >> y;
             result += y;
         }
-        cout << "Addition = " << result;
+        cout<<endl<< "Addition = " << result;
         break;
     case 2: // Substraction
 
         result = 0;
-        cout << "Enter the number to be substracted : ";
+        cout << "Enter the number of terms to be substracted : ";
         cin >> x; // input for howmany number that you want to substract
+        cout<<endl;
+
         cout << "Enter the 1st number : ";
         cin >> result;
         for (int i = 2; i <= x; i++)
@@ -113,13 +117,16 @@ lable_: // for again asking for perform any function
             cin >> y;
             result -= y;
         }
+        cout<<endl;
         cout << "Substraction = " << result;
         break;
 
     case 3: // Multiplication
 
-        cout << "Enter the number to be multiplied : ";
+        cout << "Enter the number of terms to be multiplied : ";
         cin >> x; // input for howmany number that you want to multiply
+        cout<<endl;
+
         cout << "Enter the 1st number : ";
         cin >> result;
         for (int i = 2; i <= x; i++)
@@ -140,6 +147,7 @@ lable_: // for again asking for perform any function
             cin >> y;
             result *= y;
         }
+        cout<<endl;
         cout << "Multiplication = " << result;
         break;
 
@@ -312,7 +320,7 @@ lable_: // for again asking for perform any function
         cout << "Enter a positive integer: ";
         cin >> x;
 
-        if (x < 0)
+        if (x < 0)    //negative is not possible in factorial
             cout << "Error! Factorial of a negative number doesn't exist.";
         else
         {
@@ -324,19 +332,25 @@ lable_: // for again asking for perform any function
         }
         break;
     }
-    cout << endl
+     
+Lable:
+    cout << endl 
          << endl
-         << "If you want to continue your calculation PRESS any Key." << endl;
-    cout << "If your calculation is done and you want to exit PRESS Key E or e ." << endl;
+         << "If you want to continue your calculation PRESS 1 Otherwise PRESS 0" << endl;
 
-    cout << endl
-         << "Enter Key : ";
-    cin >> key;
-    cout << endl;
+    cin >> key;   //for user response
 
-    if (key == 'E' || key == 'e')
-        cout << "-----------------------------THANK YOU------------------------------";
-
-    else
+    if (key == '0' )   //for exit
+    {
+        cout << "-----------------------------THANK YOU------------------------------";  
+    }
+    else if (key == '1' )   //for continue
+    {
         goto lable_;
+    }
+    else                    //entered key is invalid
+    {
+          cout << "**Invalid Response**" << endl;
+          goto Lable;   // continue to ask for response
+    }
 }
